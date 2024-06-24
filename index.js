@@ -11,6 +11,8 @@ const path = require("path");
 // MIDDLEWARE para archivos estáticos y publicos
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use(express.json());
+
 // UMA OPCION 
 // const productosRouter = require("./routes/productos.router.js");
 // app.use("/productos", productosRouter);
