@@ -11,6 +11,9 @@ const path = require("path");
 // MIDDLEWARE para archivos estáticos y publicos
 app.use(express.static(path.join(__dirname, "public")));
 
+
+
+// app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 
 // UMA OPCION 
